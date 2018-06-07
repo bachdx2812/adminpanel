@@ -49,5 +49,9 @@ module.exports = {
     { src: 'bulma', lang: 'sass' },
     '@/assets/css/icons.min.css',
     '@/assets/scss/dashboard.scss'
+  ],
+  js: [
+    '@/assets/js/common.js',
+    '@/assets/js/main.js',
   ]
 }

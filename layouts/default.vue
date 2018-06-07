@@ -3,17 +3,17 @@
     <!-- Pageloader -->
     <div class="pageloader"></div>
     <!-- <div class="infraloader is-active"></div> -->
-    <navbar/>
+    <navbar-main-menu/>
     <nuxt/>
   </div>
 </template>
 
 <script>
-import Navbar from '~/components/partials/Navbar.vue'
+import NavbarMainMenu from '~/components/partials/NavbarMainMenu.vue'
 
 export default {
   components: {
-    Navbar
+    NavbarMainMenu
   }
 }
 
