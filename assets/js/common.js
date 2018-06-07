@@ -5,20 +5,18 @@ js pageloader file
 ========================================================================== */
 
 $(document).ready(function($){
-    
-    "use strict";
+  "use strict";
+  //Page loader
+  if ($('.pageloader').length) {
+    alert('hallo');
+    $('.pageloader').toggleClass('is-active');
 
-    //Page loader
-    if ($('.pageloader').length) {
-
+    $(window).on('load', function() {
+      var pageloaderTimeout = setTimeout( function() {
         $('.pageloader').toggleClass('is-active');
-
-        $(window).on('load', function() {
-        var pageloaderTimeout = setTimeout( function() {
-            $('.pageloader').toggleClass('is-active');
-            $('.infraloader').toggleClass('is-active')
-            clearTimeout( pageloaderTimeout );
-        }, 700 );
-        })
-    }
+        $('.infraloader').toggleClass('is-active')
+        clearTimeout( pageloaderTimeout );
+      }, 700 );
+    })
+  }
 });

@@ -1,8 +1,7 @@
 <template>
   <div>
-    <!-- Pageloader -->
     <div class="pageloader"></div>
-    <!-- <div class="infraloader is-active"></div> -->
+    <div class="infraloader is-active"></div>
     <navbar-main-menu/>
     <nuxt/>
   </div>
